@@ -1,5 +1,4 @@
 import React, { useEffect, useRef, useState } from "react";
-import logo from './logo.svg';
 import './App.css';
 import chen from './images/chen.png'
 import reimu from './images/reimu.png'
@@ -74,7 +73,7 @@ const Slot = ({ isActive }) => {
 
   return (
     <div>
-      <img src={imgs[imageIdx]} width={160} height={160} />
+      <img src={imgs[imageIdx]} alt="slot" width={160} height={160} />
     </div>
   )
 }
