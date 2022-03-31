@@ -1,38 +1,56 @@
 .App {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
   background-color: #282c34;
   min-height: 100vh;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+
+
+.slots {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+.meta {
+  display: flex;
+  justify-content: space-around;
+  padding: 16px 0;
+}
+
+.meta > div {
+  margin: 0 32px;
+}
+
+.roll-counter {
+  font-size: 2rem;
+  background-color: rgb(233, 233, 237);
+  color: black;
+  padding: 1px 4px 4px 1px;
+  outline: 2px #ff8484 solid;
+  border: 1px solid red;
+}
+
+.slot-container {
+  background-color: #eee;
+  border-radius: 8px;
+  cursor: pointer;
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  width: max-content;
+  align-self: center;
+}
+
+
+.roll-btn {
+  font-size: 2rem;
+}
+
+@media screen and (min-width: 640px) {
+  .slot-container {
+    flex-direction: row;
   }
 }
